@@ -18,6 +18,7 @@ public class PickUpItem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        itemIsPicked = false; 
         rb = GetComponent<Rigidbody>();
         player = GameObject.Find("Astrounalt_Pink Variant").transform;
         PickUpPoint = GameObject.Find("PickUpPoint").transform; 
