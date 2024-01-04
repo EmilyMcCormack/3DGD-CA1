@@ -6,8 +6,15 @@ public class CharacterControlScript : MonoBehaviour
     public Camera cam;
     public NavMeshAgent player;
     public Animator playerAnimator;
-    public GameObject targetDest; 
+    public GameObject targetDest;
 
+    CharacterController controller;
+
+    void Start()
+    {
+        controller = GetComponent<CharacterController>();
+        controller.detectCollisions = false;
+    }
     // Update is called once per frame
     void Update()
     {

@@ -18,7 +18,6 @@ public class PickUpItem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        itemIsPicked = false; 
         rb = GetComponent<Rigidbody>();
         player = GameObject.Find("Astrounalt_Pink Variant").transform;
         PickUpPoint = GameObject.Find("PickUpPoint").transform; 
@@ -29,7 +28,7 @@ public class PickUpItem : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.E) && itemIsPicked == true && readyToThrow)
         {
-            forceMulti += 300 * Time.deltaTime;
+            forceMulti += 300 * Time.deltaTime; 
         }
 
         pickUpDistance = Vector3.Distance(player.position, transform.position);
@@ -50,8 +49,8 @@ public class PickUpItem : MonoBehaviour
 
         if(Input.GetKeyUp(KeyCode.E) && itemIsPicked == true)
         {
-            readyToThrow = true;
-            
+            readyToThrow = true; 
+
             if(forceMulti > 10)
             {
                 rb.AddForce(player.transform.forward * forceMulti);
@@ -61,7 +60,7 @@ public class PickUpItem : MonoBehaviour
                 itemIsPicked = false;
 
                 forceMulti = 0;
-                readyToThrow = false;
+                readyToThrow = false; 
             }
 
             forceMulti = 0; 
