@@ -10,11 +10,6 @@ public class CharacterControlScript : MonoBehaviour
 
     CharacterController controller;
 
-    void Start()
-    {
-        controller = GetComponent<CharacterController>();
-        controller.detectCollisions = false;
-    }
     // Update is called once per frame
     void Update()
     {
