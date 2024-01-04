@@ -1847,7 +1847,7 @@ ParticleSystem:
           outWeight: 0.33333334
         - serializedVersion: 3
           time: 0.993042
-          value: 0
+          value: 0.092308044
           inSlope: 1
           outSlope: 1
           tangentMode: 0
@@ -7436,6 +7436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bc3428965c8eab43b464fa37e910fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fillSpeed: 0.5
 --- !u!1001 &1544607395
 PrefabInstance:
   m_ObjectHideFlags: 0
