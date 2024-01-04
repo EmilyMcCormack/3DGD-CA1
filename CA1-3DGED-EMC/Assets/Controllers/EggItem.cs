@@ -7,7 +7,7 @@ using UnityEngine.Rendering.Universal;
 public class CakeItem : MonoBehaviour
 {
     //public GameObject Egg;
-    //bool isEggDestroyed = false;
+    bool isEggDestroyed = false;
     //public GameObject blood;
     private void OnTriggerEnter(Collider other)
     {
@@ -15,15 +15,13 @@ public class CakeItem : MonoBehaviour
         {
             GameVariables.eggCount += 1;
             Destroy(gameObject);
-            //isEggDestroyed = true;
+            isEggDestroyed = true;
 
         }
-        /*
         else if (other.gameObject.CompareTag("Player") && gameObject.CompareTag("blood") && isEggDestroyed == true)
         {
             GameVariables.bloodCount += 1;
             Destroy(gameObject);
         }
-        */
     }
 }
