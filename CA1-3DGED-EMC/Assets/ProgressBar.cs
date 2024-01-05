@@ -1,44 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 
+[ExecuteInEditMode()]
 public class ProgressBar : MonoBehaviour
 {
-    private Slider slider;
-    private ParticleSystem particleSys; 
-    public float fillSpeed = 0.5f; 
-    private float targetProgress = 0; 
+    public int maximum;
+    public int current;
+    public Image mask; 
 
-    private void Awake()
-    {
-        slider = gameObject.GetComponent<Slider>();
-        particleSys = GameObject.Find("Progress Bar Particles").GetComponent<ParticleSystem>();
-    }
     // Start is called before the first frame update
     void Start()
     {
-        IncrementProgress(0.75f);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (slider.value < targetProgress)
-        {
-            slider.value += fillSpeed * Time.deltaTime;
-            if (!particleSys.isPlaying)
-                particleSys.Play();
-        }
-        else
-        {
-            particleSys.Stop(); 
-        }
+        GetCurrentFill();
     }
 
-    // Add progress to the bar 
-    public void IncrementProgress(float newProgress)
+    void GetCurrentFill()
     {
-        targetProgress = slider.value += newProgress; 
+        float fillAmount = (float)current/(float)maximum;
+        mask.fillAmount = fillAmount;
     }
 }
