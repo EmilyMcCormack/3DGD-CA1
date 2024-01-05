@@ -1,12 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.ShaderGraph.Internal;
+/*https://www.youtube.com/watch?v=Qw8odLHv38Q&t=484s&ab_channel=LlamAcademy>, Accessed On: <01/24>, Using Line Numbers: 6 - 39*/
+
 using UnityEngine;
-using UnityEngine.Events; 
-using UnityEngine.UI;
 
 public class ProgressBar : MonoBehaviour
 {
+    //Script I was trying to use for a progress bar tutorial that ended up giving an AABB error so I decided to do a simpler progress bar 
+
     /*[SerializeField]
     private Image ProgressImage;
     [SerializeField]

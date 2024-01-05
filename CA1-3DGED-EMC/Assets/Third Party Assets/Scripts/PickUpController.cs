@@ -1,9 +1,16 @@
+
+
+
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUpController : MonoBehaviour
+
+//Had a lot of difficulty with pickup scripts. Tried to use tutorials but they didn't end up working. 
+/*<https://www.youtube.com/watch?v=6bFCQqabfzo&t=332s&ab_channel=SpeedTutor>, Accessed On: <01/24>, Using Line Numbers: 6 - 39*/
+
+/*public class PickUpController : MonoBehaviour
 {
     [SerializeField] Transform PickUpPoint;
     private GameObject heldObj;
@@ -14,14 +21,14 @@ public class PickUpController : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            if(heldObj == null)
+            if (heldObj == null)
             {
-                RaycastHit hit; 
-                if(Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickUpRange))
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickUpRange))
                 {
-                    PickUpObject(hit.transform.gameObject); 
+                    PickUpObject(hit.transform.gameObject);
                 }
             }
             else
@@ -30,7 +37,7 @@ public class PickUpController : MonoBehaviour
             }
         }
 
-        if(heldObj != null)
+        if (heldObj != null)
         {
             MoveObject();
         }
@@ -39,13 +46,13 @@ public class PickUpController : MonoBehaviour
     {
         if (Vector3.Distance(heldObj.transform.position, PickUpPoint.position) > 0.1f)
         {
-            Vector3 moveDirection = (PickUpPoint.position - PickUpPoint.transform.position); 
+            Vector3 moveDirection = (PickUpPoint.position - PickUpPoint.transform.position);
             heldObjRB.AddForce(moveDirection * pickUpForce);
         }
     }
     void PickUpObject(GameObject pickObj)
     {
-        if(pickObj.GetComponent<Rigidbody>())
+        if (pickObj.GetComponent<Rigidbody>())
         {
             heldObjRB = pickObj.GetComponent<Rigidbody>();
             heldObjRB.useGravity = false;
@@ -53,7 +60,7 @@ public class PickUpController : MonoBehaviour
             heldObjRB.constraints = RigidbodyConstraints.FreezeRotation;
 
             heldObjRB.transform.parent = PickUpPoint;
-            heldObj = pickObj; 
+            heldObj = pickObj;
         }
     }
 
@@ -64,6 +71,6 @@ public class PickUpController : MonoBehaviour
         heldObjRB.constraints = RigidbodyConstraints.None;
 
         heldObj.transform.parent = null;
-        heldObj = null; 
+        heldObj = null;
     }
-}
+}*/

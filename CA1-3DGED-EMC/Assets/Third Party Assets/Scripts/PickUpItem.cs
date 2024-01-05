@@ -2,7 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PickUpItem : MonoBehaviour
+//Had a lot of difficulty with pickup scripts. Tried to use tutorials but they didn't end up working.
+/*<https://www.youtube.com/watch?v=YlB9BlRIryk&ab_channel=GameAssetWorld>, Accessed On: <01/24>, Using Line Numbers: 6 - 39*/
+
+/*public class PickUpItem : MonoBehaviour
 {
     private Transform PickUpPoint;
     private Transform player;
@@ -66,4 +69,4 @@ public class PickUpItem : MonoBehaviour
             forceMulti = 0; 
         }
     }
-}
+}*/
