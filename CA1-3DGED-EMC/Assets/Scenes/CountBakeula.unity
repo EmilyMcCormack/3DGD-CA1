@@ -2442,9 +2442,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe854c01489823e45a717c856cd7b446, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PickUpPoint: {fileID: 1053197710}
-  pickUpRange: 5
-  pickUpForce: 150
 --- !u!54 &1460826664
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3159,7 +3156,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9811321, g: 0.58682805, b: 0.90842617, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
