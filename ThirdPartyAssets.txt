@@ -1,0 +1,16 @@
+<TITLE>, <URL>, Accessed On: <MM/YY>
+<Progress Bars - Customizable and Extensible (Health Bars etc)>, 
+<https://assetstore.unity.com/packages/tools/gui/progress-bars-customizable-and-extensible-health-bars-etc-268457>, Accessed On: <01/24>
+
+<LOW POLY ASTRONAULTS>, https://assetstore.unity.com/packages/3d/characters/humanoids/low-poly-astronaults-184219, Accessed On: <01/24>
+
+<CoffeeShop Starter Pack>, https://assetstore.unity.com/packages/3d/props/coffeeshop-starter-pack-160914, Accessed On: <01/24>
+
+<Free: House Interior>, https://assetstore.unity.com/packages/3d/props/interior/free-house-interior-223416, Accessed On: <01/24>
+
+<Free Halloween Pumpkin Props>, https://assetstore.unity.com/packages/3d/props/free-halloween-pumpkin-props-235332, Accessed On: <01/24>
+
+<FROOD - Free food and drinks pack>, https://assetstore.unity.com/packages/3d/props/food/frood-free-food-and-drinks-pack-152103, 
+Accessed On: <01/24>
+
+<Low Poly Food Lite>, https://assetstore.unity.com/packages/3d/props/food/low-poly-food-lite-258693, Accessed On: <01/24>
