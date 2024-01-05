@@ -6,7 +6,8 @@ public class BloodItem : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && gameObject.CompareTag("Blood"))
         {
-            GameVariables.bloodCount += 1;
+            GameItems.bloodCount += 1;
+            GameItems.ingredientCount += 1;
             Destroy(gameObject);
         }
     }

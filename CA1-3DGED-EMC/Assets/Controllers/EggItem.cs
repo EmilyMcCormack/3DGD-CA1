@@ -6,7 +6,8 @@ public class EggItem : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && gameObject.CompareTag("Egg"))
         {
-            GameVariables.eggCount += 1;
+            GameItems.eggCount += 1;
+            GameItems.ingredientCount += 1;
             Destroy(gameObject);
         }
     }

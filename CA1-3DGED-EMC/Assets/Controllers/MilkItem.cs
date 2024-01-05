@@ -6,7 +6,8 @@ public class MilkItem : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && gameObject.CompareTag("Milk"))
         {
-            GameVariables.milkCount += 1;
+            GameItems.milkCount += 1;
+            GameItems.ingredientCount += 1;
             Destroy(gameObject);
         }
     }

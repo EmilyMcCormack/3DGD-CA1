@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class ProgressBar : MonoBehaviour
 {
-    [SerializeField]
+    /*[SerializeField]
     private Image ProgressImage;
     [SerializeField]
     private float DefaultSpeed = 1f;
@@ -68,5 +68,5 @@ public class ProgressBar : MonoBehaviour
         ProgressImage.fillAmount = Progress;
         OnProgress?.Invoke(Progress);
         OnComplete?.Invoke(); 
-    }
+    }*/
 }

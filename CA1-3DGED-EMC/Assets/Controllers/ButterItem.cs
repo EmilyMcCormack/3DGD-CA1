@@ -6,7 +6,8 @@ public class ButterItem : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && gameObject.CompareTag("Butter"))
         {
-            GameVariables.butterCount += 1;
+            GameItems.butterCount += 1;
+            GameItems.ingredientCount += 1;
             Destroy(gameObject);
         }
     }

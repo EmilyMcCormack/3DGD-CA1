@@ -9,7 +9,7 @@ public class CakeItem : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && gameObject.CompareTag("Egg"))
         {
-            GameVariables.eggCount += 1;
+          //  GameVariables.eggCount += 1;
             Destroy(gameObject);
             //isEggDestroyed = true;
 
